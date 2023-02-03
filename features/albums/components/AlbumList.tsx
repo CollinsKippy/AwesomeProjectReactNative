@@ -55,12 +55,12 @@ const styles = StyleSheet.create({
   album: {
     marginBottom: 8,
     marginTop: 8,
-    paddingBottom: 8,
+    paddingBottom: 16,
     borderBottomColor: 'lightgray',
     borderBottomWidth: 1
   },
   albumTitle: {
-    fontSize: 16
+    fontSize: 18
   }
 })
 
