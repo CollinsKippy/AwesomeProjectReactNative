@@ -1,7 +1,10 @@
-import {Action, configureStore, ThunkAction} from '@reduxjs/toolkit';
+import { Action, configureStore, ThunkAction } from '@reduxjs/toolkit';
+import albumReducer from '../features/albums/albumSlice';
 
 export const store = configureStore({
-  reducer: {},
+  reducer: {
+    album: albumReducer,
+  },
 });
 
 export type AppDispatch = typeof store.dispatch;

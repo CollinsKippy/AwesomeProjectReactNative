@@ -35,8 +35,8 @@ export const fetchAlbums = createAsyncThunk(
   },
 );
 
-export const productSlice = createSlice({
-  name: 'product',
+export const albumSlice = createSlice({
+  name: 'album',
   initialState,
   reducers: {},
   extraReducers: builder => {
@@ -54,9 +54,9 @@ export const productSlice = createSlice({
   },
 });
 
-export const selectProducts = (state: RootState) => state.product.products;
+export const selectAlbums = (state: RootState) => state.album.albums;
 
 // export const { loadProducts, loadProductsSuccess, loadProductsFailed } =
-//   productSlice.actions;
+//   albumSlice.actions;
 
-export default productSlice.reducer;
+export default albumSlice.reducer;
